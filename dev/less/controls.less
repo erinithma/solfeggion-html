@@ -1,0 +1,52 @@
+.button{
+    height: 22px;
+    @media (max-width: (@sm-width - 1)){
+        height: 28px;
+    }
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, @color-default, @color-default-dark);
+    border: 1px solid @color-default-dark;
+    color: black;
+    text-decoration: none !important;
+    outline: none !important;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+
+    &:hover{
+        background: linear-gradient(to bottom, @color-default-dark, @color-default);
+    }
+}
+
+.button--primary{
+    background: linear-gradient(to bottom, @color-primary, @color-primary-dark);
+    border: 1px solid @color-primary-dark;
+    color: white;
+
+    &:hover{
+        background: linear-gradient(to bottom, @color-primary-dark, @color-primary);
+    }
+}
+
+.button--success{
+    background: linear-gradient(to bottom, @color-success, @color-success-dark);
+    border: 1px solid @color-success-dark;
+    color: white;
+
+    &:hover{
+        background: linear-gradient(to bottom, @color-success-dark, @color-success);
+    }
+}
+
+.button--danger{
+    background: linear-gradient(to bottom, @color-danger, @color-danger-dark);
+    border: 1px solid @color-danger-dark;
+    color: white;
+
+    &:hover{
+        background: linear-gradient(to bottom, @color-danger-dark, @color-danger);
+    }
+}
